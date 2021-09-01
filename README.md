@@ -1,7 +1,7 @@
 # Break-It-Fix-It: Learning to Repair Programs from Unlabeled Data
 
 This repo provides the source code & data of our paper: [Break-It-Fix-It: Unsupervised Learning for Program Repair](http://arxiv.org/abs/2106.06600) (ICML 2021).
-```
+```bib
 @InProceedings{yasunaga2021break,
   author =  {Michihiro Yasunaga and Percy Liang},
   title =   {Break-It-Fix-It: Unsupervised Learning for Program Repair},
@@ -84,7 +84,7 @@ First, train the initial fixer by running commands in `src/run-round0.py` one by
 Below is an illustration for the case of BIFI.
 
 **run-round0.sh**
-```
+```bash
 export PYTHONPATH=.
 
 #Train initial fixer on synthetic paired data
@@ -99,7 +99,7 @@ python src/c005__eval_fixer.py  --round_name round0
 
 
 **run-BIFI.sh** (round 1)
-```
+```bash
 #Use the fixer outputs on the bad code (chunk 0,1,2) to get new paired data (Equation 6 in the paper)
 python src/c006__generate_paired_data_from_fixer.py --round_name round0 --out_round_name round1-BIFI-part1
 
