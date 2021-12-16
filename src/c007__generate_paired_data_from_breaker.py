@@ -55,7 +55,7 @@ def eval_one_split(pred_dir_prefix, split, pred_fname, goods, n_workers=80):
     for j in range(len(preds)):
         progid = progids[j]
         preds[j]['progid'] = progid
-        code_toks_raw = goods[progid].split()
+        code_toks_raw = goods[progid]['code_toks_joined'].split()
         preds[j]['code_toks_raw'] = code_toks_raw
         preds[j]['anonymize_dict'] = None
     #
