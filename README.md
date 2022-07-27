@@ -34,7 +34,7 @@ pip install tqdm
 pip install torch==1.4.0 torchvision==0.5.0
 cd utils/fairseq
 pip install -e .
-pip numpy==1.20.1 editdistance
+pip install numpy==1.20.1 editdistance
 ```
 
 
