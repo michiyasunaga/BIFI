@@ -22,11 +22,7 @@ This repo provides the source code & data of our paper: [Break-It-Fix-It: Unsupe
 
 ## 0. Dependencies
 
-- [Python](<https://www.python.org/>) == 3.7.7
-- [PyTorch](<https://pytorch.org/get-started/locally/>) == 1.4.0
-- [fairseq](<https://github.com/pytorch/fairseq>)
-
-Specifically, run the following commands to create a conda environment (assuming CUDA10.1):
+Run the following commands to create a conda environment (assuming CUDA10.1):
 ```bash
 conda create -n BIFI python=3.7.7
 conda activate BIFI
@@ -34,8 +30,9 @@ pip install tqdm
 pip install torch==1.4.0 torchvision==0.5.0
 cd utils/fairseq
 pip install -e .
-pip numpy==1.20.1 editdistance
+pip install numpy==1.20.1 editdistance
 ```
+Alternatively, you can use the Dockerfile in the `docker` folder of this repo to set up the environment.
 
 
 ## 1. Download Data
